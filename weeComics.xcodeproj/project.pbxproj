@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4308F42021615C3400276CD0 /* StripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4308F41F21615C3400276CD0 /* StripViewController.swift */; };
+		4308F42221615C5C00276CD0 /* ComicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4308F42121615C5C00276CD0 /* ComicAPI.swift */; };
 		43D83D4A216158EB00384F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D83D49216158EB00384F1E /* AppDelegate.swift */; };
-		43D83D4C216158EB00384F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D83D4B216158EB00384F1E /* ViewController.swift */; };
 		43D83D4F216158EB00384F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D83D4D216158EB00384F1E /* Main.storyboard */; };
 		43D83D52216158EB00384F1E /* weeComics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43D83D50216158EB00384F1E /* weeComics.xcdatamodeld */; };
 		43D83D54216158ED00384F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D83D53216158ED00384F1E /* Assets.xcassets */; };
 		43D83D57216158ED00384F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D83D55216158ED00384F1E /* LaunchScreen.storyboard */; };
+		8943FFEC5D9F06DEABD53650 /* Pods_weeComics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B11F4A233A3C7AE01491145 /* Pods_weeComics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B11F4A233A3C7AE01491145 /* Pods_weeComics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weeComics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4308F41F21615C3400276CD0 /* StripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripViewController.swift; sourceTree = "<group>"; };
+		4308F42121615C5C00276CD0 /* ComicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicAPI.swift; sourceTree = "<group>"; };
 		43D83D46216158EB00384F1E /* weeComics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weeComics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D83D49216158EB00384F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43D83D4B216158EB00384F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43D83D4E216158EB00384F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43D83D51216158EB00384F1E /* weeComics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weeComics.xcdatamodel; sourceTree = "<group>"; };
 		43D83D53216158ED00384F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43D83D56216158ED00384F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43D83D58216158ED00384F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720C4E4F575F14D4530EAF42 /* Pods-weeComics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weeComics.release.xcconfig"; path = "Pods/Target Support Files/Pods-weeComics/Pods-weeComics.release.xcconfig"; sourceTree = "<group>"; };
+		CE5069F8BD5BC06AFA771FD4 /* Pods-weeComics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weeComics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weeComics/Pods-weeComics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8943FFEC5D9F06DEABD53650 /* Pods_weeComics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19CFE2B10AD91F6A96A20F45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B11F4A233A3C7AE01491145 /* Pods_weeComics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43D83D3D216158EB00384F1E = {
 			isa = PBXGroup;
 			children = (
 				43D83D48216158EB00384F1E /* weeComics */,
 				43D83D47216158EB00384F1E /* Products */,
+				D0CD958EE4883A7379180D0A /* Pods */,
+				19CFE2B10AD91F6A96A20F45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +74,24 @@
 			isa = PBXGroup;
 			children = (
 				43D83D49216158EB00384F1E /* AppDelegate.swift */,
-				43D83D4B216158EB00384F1E /* ViewController.swift */,
 				43D83D4D216158EB00384F1E /* Main.storyboard */,
+				4308F41F21615C3400276CD0 /* StripViewController.swift */,
+				4308F42121615C5C00276CD0 /* ComicAPI.swift */,
 				43D83D53216158ED00384F1E /* Assets.xcassets */,
 				43D83D55216158ED00384F1E /* LaunchScreen.storyboard */,
 				43D83D58216158ED00384F1E /* Info.plist */,
 				43D83D50216158EB00384F1E /* weeComics.xcdatamodeld */,
 			);
 			path = weeComics;
+			sourceTree = "<group>";
+		};
+		D0CD958EE4883A7379180D0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE5069F8BD5BC06AFA771FD4 /* Pods-weeComics.debug.xcconfig */,
+				720C4E4F575F14D4530EAF42 /* Pods-weeComics.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43D83D5B216158ED00384F1E /* Build configuration list for PBXNativeTarget "weeComics" */;
 			buildPhases = (
+				5B1BA584D4B0F7380EA16128 /* [CP] Check Pods Manifest.lock */,
 				43D83D42216158EB00384F1E /* Sources */,
 				43D83D43216158EB00384F1E /* Frameworks */,
 				43D83D44216158EB00384F1E /* Resources */,
+				BB181CBB32A664BF600D6291 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +162,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B1BA584D4B0F7380EA16128 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weeComics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB181CBB32A664BF600D6291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-weeComics/Pods-weeComics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weeComics/Pods-weeComics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43D83D42216158EB00384F1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D83D4C216158EB00384F1E /* ViewController.swift in Sources */,
 				43D83D52216158EB00384F1E /* weeComics.xcdatamodeld in Sources */,
 				43D83D4A216158EB00384F1E /* AppDelegate.swift in Sources */,
+				4308F42221615C5C00276CD0 /* ComicAPI.swift in Sources */,
+				4308F42021615C3400276CD0 /* StripViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +355,7 @@
 		};
 		43D83D5C216158ED00384F1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5069F8BD5BC06AFA771FD4 /* Pods-weeComics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +374,7 @@
 		};
 		43D83D5D216158ED00384F1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720C4E4F575F14D4530EAF42 /* Pods-weeComics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
