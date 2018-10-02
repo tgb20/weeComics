@@ -12,48 +12,102 @@ import Alamofire
 
 class ComicAPI: NSObject {
     
-    func getStrips() -> [Strip]{
-        // Get All Strips with Images and Links
-        
-        return []
-    }
     
-    func getComics(stripID:Int) -> [Comic]{
-        // Get Comics for strip stripID
-        
-        return []
-    }
+    
+    
 }
 
 
 class Strip: NSObject {
     
-    private var name = String()
-    private var logo = UIImage()
+    private var title = String()
+    private var logo = String()
     private var author = String()
-    private var stripID = Int()
-    private var link = String()
+    private var url = String()
+    private var comics = [Comic]()
+    private var website = String()
     
-    init(name:String, logo:UIImage, author:String, stripID:Int, link:String){
-        self.name = name
-        self.logo = logo
-        self.author = author
-        self.stripID = stripID
-        self.link = link
+    // Inits comic with a url to json file
+    init(url:String) {
+        self.url = url
+        
+        // Get Rest of Data from JSON
     }
+    
+    // Returns the Title of the Strip
+    func getTitle() -> String {
+        return self.title
+    }
+    
+    // Returns the link to the logo of the Strip
+    func getLogo() -> String {
+        return self.logo
+    }
+    
+    // Returns the author of the strip
+    func getAuthor() -> String {
+        return self.author
+    }
+    
+    // Returns website of the strip
+    func getWebsite() -> String {
+        return self.website
+    }
+    
+    // Gets a comic by id
+    func getComicById(id:Int) -> Comic {
+        return comics[id]
+    }
+    
+    // Returns all comics of strip
+    func getComics() -> [Comic] {
+        return comics
+    }
+    
+    
+    
 }
 
 class Comic: NSObject {
     
     private var name = String()
-    private var comic = UIImage()
+    private var comicImage = String()
     private var cDescription = String()
     private var comicID = Int()
+    private var comicLink = String()
     
-    init(name:String, comic:UIImage, cDescription:String, comicID:Int){
+    // Ints a Comic with Base Information
+    init(name:String, comicImage:String, cDescription:String, comicID:Int, comicLink:String){
         self.name = name
-        self.comic = comic
+        self.comicImage = comicImage
         self.cDescription = cDescription
         self.comicID = comicID
+        self.comicLink = comicLink
     }
+    
+    // Returns name of comic
+    func getName() -> String {
+        return self.name
+    }
+    
+    // Returns link to image for the comic
+    func getComicImage() -> String {
+        return self.comicImage
+    }
+    
+    // Returns the comics description
+    func getDescription() -> String {
+        return self.cDescription
+    }
+    
+    // Returns the comics id
+    func getComicId() -> Int {
+        return self.comicID
+    }
+    
+    // Returns the link to the original comic
+    func getComicLink() -> String {
+        return self.comicLink
+    }
+    
 }
