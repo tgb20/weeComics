@@ -12,9 +12,17 @@ import Alamofire
 
 class ComicAPI: NSObject {
     
+    private var strips = [Strip]()
     
+    init(url:String) {
+        // Fetch Strips from URL
+        self.strips = []
+    }
     
-    
+    // Gets All Strips on Service
+    func getStrips() -> [Strip] {
+        return self.strips
+    }
 }
 
 
